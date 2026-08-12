@@ -1,0 +1,9 @@
+﻿variavel;descricao;uso
+mortos;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
+feridos;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
+feridos_leves;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
+feridos_graves;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
+total_vitimas;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
+indice_gravidade;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
+acidente_grave;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
+classificacao_acidente;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
