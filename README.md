@@ -1,40 +1,76 @@
-# Meus Projetos — Unidade 1 (Análise de Dados)
+# 🚧 Análise de Acidentes da PRF — 2025
 
-**Aponti Academy**
-**Curso:** Análise de Dados
-**Professor:** Danilo Cavalcanti
-**Aluno:** Wilson A. Gomes
+Repositório com as atividades práticas desenvolvidas no curso de **Análise de Dados da Aponti Academy**, utilizando dados de acidentes registrados pela Polícia Rodoviária Federal (PRF) em 2025.
 
-## Sobre este repositório
+| Informação | Detalhes |
+|---|---|
+| **Aluno** | Wilson A. Gomes |
+| **Professor** | Danilo Cavalcanti |
+| **Curso** | Análise de Dados |
 
-Reúne as atividades práticas da Unidade 1 do curso, organizadas em 4 pastas. As pastas `02`, `03` e `04`
-formam um único projeto contínuo sobre acidentes da PRF (Polícia Rodoviária Federal) em 2025 — da
-exploração em SQL até o dashboard final. A pasta `01` é um exercício independente de fundamentos de
-banco de dados.
+---
 
-## Estrutura
+## 📌 Sobre o repositório
 
-| Pasta | Conteúdo | Tecnologia |
-|---|---|---|
-| [`01_banco_de_dados_escola_tech`](01_banco_de_dados_escola_tech/README.md) | Exercício de banco de dados relacional com uma escola fictícia (CRUD, agregações, `CASE WHEN`) | SQLite |
-| [`02_consultas_sql_acidentes_prf`](02_consultas_sql_acidentes_prf/README.md) | Exploração SQL da base de acidentes da PRF 2025 (views, agregações, bivariadas, *lift*) | SQLite |
-| [`03_tratamento_dados_prf`](03_tratamento_dados_prf/README.md) | Limpeza e preparação da base de acidentes da PRF 2025 (Módulo 4), gerando bases analítica e modelável | Python / Jupyter (pandas) |
-| [`04_dashboard_powerbi_prf`](04_dashboard_powerbi_prf/README.md) | Dashboard consolidando os indicadores de acidentes da PRF 2025 | Excel |
+As atividades estão organizadas por unidade e acompanham a evolução do projeto: da exploração inicial dos dados à criação de indicadores, dashboards, tratamento de dados e análises com Python.
 
-Cada pasta tem seu próprio `README.md` com o detalhamento do que foi feito e as boas práticas aplicadas
-naquela atividade.
+Cada pasta possui um `README.md` próprio, com os objetivos, arquivos e detalhes da respectiva atividade.
 
-## Boas práticas gerais adotadas no projeto
+## 🎯 Objetivo
 
-- **Dados brutos nunca são sobrescritos** — toda transformação gera um novo arquivo em uma pasta de
-  saída (`dados_tratados/`), preservando a fonte original.
-- **Variável-alvo consistente**: `acidente_fatal = 1` quando `mortos >= 1`, usada da mesma forma tanto
-  nas consultas SQL quanto no tratamento em Python.
-- **Prevenção de data leakage**: colunas que revelam o desfecho (mortos, feridos, gravidade,
-  classificação) são excluídas da base usada para modelagem.
-- **Decisões documentadas**: tratamentos de dados e suas justificativas ficam registrados em log
-  (`03_tratamento_dados_prf/logs/decisoes_tratamento_modulo4.md`), não só no código.
-- **Encoding e formatação pensados para o público final**: exportações em UTF-8 com BOM para abrir
-  corretamente no Excel.
-- **Nomes de pastas e arquivos descritivos**, numerados na ordem em que o projeto evolui, facilitando a
-  navegação por quem revisa o material depois.
+Aplicar, de forma prática, os principais conceitos de análise de dados por meio da exploração da base de acidentes da PRF de 2025. O projeto busca transformar dados brutos em informações relevantes, utilizando consultas, tratamento, indicadores e visualizações para identificar padrões e apoiar a compreensão das ocorrências nas rodovias federais brasileiras.
+
+Além do aprendizado acadêmico, o repositório tem como objetivo demonstrar a evolução das habilidades em **SQL, Excel e Python**, reunindo as atividades desenvolvidas em um portfólio organizado e documentado.
+
+## 🗂️ Atividades
+
+| Unidade | Descrição | Tecnologias |
+| :---: |---|---|
+| [**01**](atividade_unidade_1_prf/README.md) | Dashboard com os principais indicadores dos acidentes da PRF em 2025. | Excel |
+| [**02**](atividade_unidade_2_prf/README.md) | Consultas e análises exploratórias, incluindo agregações, cruzamentos e cálculo de *lift*. | SQL · SQLite |
+| [**03**](atividade_unidade_3_prf/README.md) | Limpeza, padronização e preparação das bases analítica e modelável. | Python · Pandas · Jupyter |
+| [**04**](atividade_unidade_4_prf/README.md) | Análise de indicadores, gravidade, letalidade e cruzamentos entre variáveis. | Excel |
+| [**05**](atividade_unidade_5_prf/README.md) | Análise exploratória e visualização dos dados como extensão complementar em Python. | Python · Pandas · NumPy · Matplotlib |
+
+## 🔄 Fluxo do projeto
+
+```text
+Dados da PRF
+    ↓
+Consultas e exploração em SQL
+    ↓
+Tratamento e preparação dos dados
+    ↓
+Indicadores e dashboards
+    ↓
+Análise exploratória e visualizações em Python
+```
+
+## 🛠️ Tecnologias utilizadas
+
+- **SQL e SQLite** para consultas, agregações e criação de *views*;
+- **Excel** para indicadores, tabelas dinâmicas, gráficos e dashboards;
+- **Python** para tratamento e análise exploratória;
+- **Pandas e NumPy** para manipulação dos dados;
+- **Matplotlib** para visualizações;
+- **Jupyter Notebook** para documentação e execução das análises.
+
+## ✅ Boas práticas adotadas
+
+- Preservação dos dados brutos, sem sobrescrever a fonte original;
+- separação entre dados de entrada, arquivos tratados e resultados;
+- uso consistente da variável-alvo `acidente_fatal`;
+- prevenção de *data leakage* na base destinada à modelagem;
+- documentação das decisões de tratamento;
+- nomes descritivos para pastas, arquivos e consultas;
+- exportação em formatos compatíveis com as ferramentas utilizadas.
+
+## 🚀 Como explorar o projeto
+
+1. Acesse uma das unidades na tabela de atividades acima.
+2. Consulte o `README.md` da pasta escolhida.
+3. Siga as instruções de execução ou abertura indicadas em cada atividade.
+
+---
+
+> Este repositório possui finalidade acadêmica e de portfólio.
