@@ -1,0 +1,47 @@
+FREQUÊNCIA E RANKING — UF x ACIDENTE FATAL
+===========================================
+
+1. OBJETIVO
+
+O objetivo desta análise é comparar a quantidade de acidentes e o percentual de acidentes fatais entre os estados brasileiros. A ideia é observar quais UFs apresentam os maiores e menores índices e verificar se estados com mais acidentes também possuem maior percentual de fatalidade.
+
+
+2. RESULTADO
+
+Os maiores percentuais de acidentes fatais foram encontrados nos seguintes estados:
+
+1º Maranhão (MA) — 19%
+2º Pará (PA) — 17%
+3º Roraima (RR) — 16%
+4º Amazonas (AM) — 14%
+5º Alagoas (AL) — 14%
+
+Entre os menores percentuais aparecem:
+
+1º Distrito Federal (DF) — 4%
+2º São Paulo (SP) — 4%
+3º Santa Catarina (SC) — 5%
+4º Rio de Janeiro (RJ) — 5%
+5º Amapá (AP) — 5%
+
+
+3. ANÁLISE DOS DADOS
+
+Os dados mostram diferenças importantes entre os estados brasileiros. O Maranhão apresenta o maior percentual de acidentes fatais, com 19%, seguido pelo Pará com 17% e Roraima com 16%.
+
+Um ponto que chama atenção é que estados com maior número total de acidentes não necessariamente possuem maior percentual de fatalidade. Santa Catarina, por exemplo, registrou 8.186 acidentes e apresentou 5% de acidentes fatais. Já o Maranhão registrou 1.262 acidentes, mas chegou a 19%.
+
+Minas Gerais também apresentou um volume elevado, com 9.570 acidentes, porém seu percentual de acidentes fatais ficou em aproximadamente 7%.
+
+Também é possível observar que vários estados das regiões Norte e Nordeste aparecem entre os maiores percentuais. Esse resultado pode estar relacionado a fatores como condições das rodovias, infraestrutura, fiscalização e características regionais.
+
+No entanto, os dados analisados não permitem afirmar que esses fatores sejam diretamente responsáveis pelos resultados. Para confirmar essas hipóteses, seria necessário realizar outras análises com informações complementares.
+
+
+4. CONCLUSÕES
+
+A análise mostra que existe uma diferença significativa no percentual de acidentes fatais entre os estados brasileiros. O Maranhão apresentou o maior percentual, enquanto São Paulo e Distrito Federal ficaram entre os menores.
+
+Também foi possível perceber que a quantidade total de acidentes não determina diretamente o percentual de fatalidade. Estados com muitos acidentes podem apresentar percentuais menores, enquanto outros com menos ocorrências podem ter uma proporção maior de acidentes fatais.
+
+Dessa forma, os resultados ajudam a identificar padrões e levantar hipóteses para análises futuras sobre os fatores que podem influenciar a gravidade dos acidentes.

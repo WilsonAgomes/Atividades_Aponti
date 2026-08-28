@@ -1,0 +1,39 @@
+FREQUÊNCIA E RANKING — FASE DO DIA x ACIDENTE FATAL
+===================================================
+
+1. OBJETIVO
+
+O objetivo desta análise é comparar a quantidade de acidentes e o percentual de acidentes fatais de acordo com a fase do dia. A ideia é identificar em quais períodos ocorrem os maiores volumes de acidentes e em quais momentos a proporção de acidentes fatais é mais elevada.
+
+
+2. RESULTADO
+
+O maior percentual de acidentes fatais foi registrado no amanhecer, com 11%.
+
+A plena noite aparece logo em seguida, com 10%, além de apresentar 24.781 acidentes e 2.522 acidentes fatais.
+
+O pleno dia apresentou a maior quantidade total de acidentes, com 40.375 registros, porém teve o menor percentual de acidentes fatais, com 5%.
+
+
+3. ANÁLISE DOS DADOS
+
+Os dados mostram que o maior volume de acidentes ocorre durante o pleno dia, com 40.375 registros. Mesmo assim, esse período apresenta o menor percentual de acidentes fatais da análise, com aproximadamente 5%.
+
+O amanhecer apresentou uma quantidade bem menor de acidentes, com 3.447 registros, mas teve o maior percentual de fatalidade, chegando a 11%. Isso mostra que um período com menos acidentes pode apresentar uma proporção maior de ocorrências fatais.
+
+A plena noite também chama atenção, pois apresenta 24.781 acidentes e percentual de fatalidade de 10%. Além disso, foi o período com a maior quantidade de acidentes fatais, totalizando 2.522 casos.
+
+Já o anoitecer apresentou 3.926 acidentes e percentual de fatalidade de aproximadamente 6%.
+
+Esses resultados indicam que a quantidade total de acidentes e o percentual de fatalidade não seguem necessariamente o mesmo comportamento. Fatores como visibilidade, iluminação, cansaço dos condutores e condições das vias podem contribuir para essas diferenças, mas seriam necessárias outras análises para confirmar essas hipóteses.
+
+
+4. CONCLUSÕES
+
+A análise mostra que o pleno dia concentra a maior quantidade de acidentes, mas possui o menor percentual de acidentes fatais.
+
+Por outro lado, o amanhecer apresenta o maior percentual de fatalidade, com 11%, mesmo tendo um número total de acidentes bem menor.
+
+A plena noite também merece destaque, pois combina um grande volume de acidentes com um percentual elevado de fatalidade.
+
+Dessa forma, os dados mostram que a fase do dia pode apresentar diferenças importantes tanto na quantidade quanto na gravidade dos acidentes, sendo necessário analisar esses dois indicadores em conjunto.
