@@ -2,7 +2,7 @@
 
 Projeto de análise exploratória de dados dos **acidentes registrados pela Polícia Rodoviária Federal (PRF) em 2025**, desenvolvido como uma extensão em Python do trabalho acadêmico originalmente realizado em Excel/Google Sheets.
 
-O projeto utiliza **Pandas, NumPy e Matplotlib** para reproduzir e adaptar os mesmos tipos de gráficos presentes no notebook de referência `graficos12.ipynb`, aplicando-os à base consolidada da atividade PRF 2025.
+O projeto utiliza **Pandas, NumPy e Matplotlib** para reproduzir e adaptar os **cinco primeiros gráficos** do notebook de referência `graficos12.ipynb`, aplicando-os à base consolidada da atividade PRF 2025.
 
 ---
 
@@ -11,15 +11,10 @@ O projeto utiliza **Pandas, NumPy e Matplotlib** para reproduzir e adaptar os me
 A análise busca transformar os registros brutos de acidentes em informações que ajudem a compreender:
 
 - a distribuição da fatalidade;
+- a distribuição de pessoas em acidentes fatais e não fatais;
 - a relação entre veículos e pessoas envolvidas;
-- a evolução mensal dos acidentes fatais;
-- os estados com maior volume de acidentes fatais;
-- os períodos do dia com maior concentração de ocorrências fatais;
-- os horários e dias da semana mais críticos;
-- a relação entre variáveis numéricas;
-- os tipos de acidentes que mais contribuem para a fatalidade;
-- a participação dos diferentes tipos de pista;
-- o perfil comparativo das UFs com mais acidentes fatais.
+- a tendência média dessa relação;
+- as diferenças visuais entre acidentes fatais e não fatais.
 
 > ⚠️ **Importante:** o enunciado original da atividade acadêmica determina que a entrega oficial seja realizada exclusivamente em **Excel/Google Sheets**, sem Python, R ou Jupyter. Este repositório é uma **extensão complementar para estudo, prática de Pandas e portfólio**, não uma substituição da entrega oficial.
 
@@ -31,8 +26,8 @@ O projeto tem como objetivos:
 
 1. praticar leitura e tratamento de arquivos Excel com Pandas;
 2. validar os indicadores obtidos anteriormente no Excel;
-3. explorar distribuições, relações e padrões temporais;
-4. reproduzir os gráficos do notebook de referência usando a base real do projeto;
+3. explorar distribuições e relações entre variáveis;
+4. reproduzir os cinco primeiros gráficos do notebook de referência usando a base real do projeto;
 5. desenvolver interpretação estatística e storytelling de dados;
 6. organizar uma estrutura de projeto adequada para uso no VS Code e publicação no GitHub.
 
@@ -57,24 +52,10 @@ Principais variáveis utilizadas:
 | Variável | Descrição |
 |---|---|
 | `id` | Identificador da ocorrência |
-| `data_inversa` | Data do acidente |
-| `dia_semana` | Dia da semana |
-| `horario` | Horário do acidente |
-| `uf` | Unidade federativa |
-| `br` | Rodovia federal |
-| `municipio` | Município |
-| `causa_acidente` | Causa registrada |
-| `tipo_acidente` | Tipo de acidente |
-| `fase_dia` | Fase do dia |
-| `condicao_metereologica` | Condição meteorológica |
-| `tipo_pista` | Tipo de pista |
 | `pessoas` | Pessoas envolvidas |
 | `mortos` | Mortos |
 | `feridos_leves` | Feridos leves |
 | `feridos_graves` | Feridos graves |
-| `ilesos` | Pessoas ilesas |
-| `ignorados` | Situação ignorada |
-| `feridos` | Total de feridos da base |
 | `veiculos` | Veículos envolvidos |
 | `Total_de_vitimas` | Coluna auxiliar construída no projeto |
 | `Acidentes_Fatais` | Coluna auxiliar: 1 quando há pelo menos um morto |
@@ -132,7 +113,7 @@ Mortos / Total de vítimas × 100
 ## 📁 Estrutura do projeto
 
 ```text
-Projeto_PRF_2025_Pandas/
+atividade_unidade_5_prf/
 │
 ├── dados/
 │   └── dados_abertos_prf_2025.xlsx
@@ -141,8 +122,8 @@ Projeto_PRF_2025_Pandas/
 │   ├── 01_histograma_mortos.png
 │   ├── 02_densidade_pessoas.png
 │   ├── 03_dispersao_veiculos_pessoas.png
-│   ├── ...
-│   └── 16_radar_top3_ufs.png
+│   ├── 04_dispersao_regressao.png
+│   └── 05_dispersao_fatalidade.png
 │
 ├── notebooks/
 │   └── analise_graficos_prf_2025.ipynb
@@ -170,7 +151,7 @@ Projeto_PRF_2025_Pandas/
 No VS Code:
 
 ```text
-Arquivo → Abrir Pasta → Projeto_PRF_2025_Pandas
+Arquivo → Abrir Pasta → atividade_unidade_5_prf
 ```
 
 ### 2. Crie um ambiente virtual
@@ -205,13 +186,9 @@ notebooks/analise_graficos_prf_2025.ipynb
 
 Selecione o interpretador Python do ambiente `.venv` e execute as células na ordem.
 
-### 5. Alternativa: executar o script Python
+### 5. Consulte os arquivos gerados
 
-```bash
-python src/analise_graficos_prf_2025.py
-```
-
-Os arquivos PNG serão gravados automaticamente em:
+Ao executar o notebook, os cinco arquivos PNG serão gravados automaticamente em:
 
 ```text
 graficos/
@@ -221,7 +198,7 @@ graficos/
 
 ## 📈 Gráficos adaptados do código de referência
 
-Os tipos de gráficos foram mantidos conforme o notebook fornecido.
+Foram mantidos os cinco primeiros tipos de gráficos do notebook fornecido.
 
 | Nº | Visualização | Pergunta respondida |
 |---:|---|---|
@@ -230,17 +207,6 @@ Os tipos de gráficos foram mantidos conforme o notebook fornecido.
 | 3 | Dispersão | Mais veículos estão associados a mais pessoas envolvidas? |
 | 4 | Dispersão + tendência | Qual é a direção média dessa relação? |
 | 5 | Dispersão por classe | Fatais e não fatais ocupam regiões diferentes? |
-| 6 | Dois gráficos mensais | Volume e percentual de fatalidade variam no ano? |
-| 7 | Boxplot | Como a quantidade de pessoas se distribui por fatalidade? |
-| 8 | Barras horizontais | Quais UFs concentram mais acidentes fatais? |
-| 9 | Pizza | Como os acidentes fatais se distribuem pelas fases do dia? |
-| 10 | Heatmap dia × hora | Em quais combinações de dia e horário há mais fatais? |
-| 11 | Heatmap de correlação | Quais variáveis apresentam maior associação linear? |
-| 12 | Dispersão 3D | Como veículos, pessoas e feridos graves se combinam? |
-| 13 | Linha mensal | Qual mês apresentou maior número de fatais? |
-| 14 | Pareto | Quais tipos concentram a maior parte dos acidentes fatais? |
-| 15 | Área empilhada | Como a fatalidade mensal se distribui por tipo de pista? |
-| 16 | Radar | Como se comparam as 3 UFs com mais acidentes fatais? |
 
 ---
 
@@ -267,64 +233,6 @@ A correlação entre quantidade de veículos e pessoas é aproximadamente **0,39
 
 Esse resultado não significa que aumentar o número de veículos cause automaticamente maior quantidade de pessoas ou maior fatalidade. A relação é apenas descritiva.
 
-### 4. Evolução mensal
-
-**Maio** apresentou:
-
-- **504 acidentes fatais**;
-- aproximadamente **8,27% de acidentes fatais** sobre o total de acidentes daquele mês.
-
-Foi o maior resultado mensal nas duas medidas dentro da base de 2025.
-
-### 5. UFs com maior volume de acidentes fatais
-
-As três primeiras são:
-
-1. **MG — 647** acidentes fatais;
-2. **PR — 511**;
-3. **BA — 476**.
-
-No radar, entretanto, a Bahia apresenta percentual de acidentes fatais superior ao de Minas Gerais e Paraná. Isso reforça a importância de separar **volume absoluto** de **proporção**.
-
-### 6. Fase do dia
-
-Entre os acidentes fatais:
-
-- **Plena Noite:** 2.522 — aproximadamente **48,4%**;
-- **Pleno dia:** 2.049 — aproximadamente **39,3%**;
-- **Amanhecer:** 386 — aproximadamente **7,4%**;
-- **Anoitecer:** 253 — aproximadamente **4,9%**.
-
-A participação no total de fatais não deve ser confundida com a taxa de fatalidade de cada fase do dia.
-
-### 7. Dia e horário
-
-No heatmap dia × hora, a combinação com maior contagem anual é:
-
-```text
-Domingo às 19h → 95 acidentes fatais
-```
-
-Esse valor identifica uma concentração observada no período, não uma relação causal.
-
-### 8. Tipos de acidente — Pareto
-
-Os **seis primeiros tipos** do ranking acumulam aproximadamente **81,5%** dos acidentes fatais.
-
-A **colisão frontal** ocupa a primeira posição, com **1.396 acidentes fatais**.
-
-O Pareto permite priorizar análises e medidas preventivas nos tipos que concentram a maior parcela da fatalidade.
-
-### 9. Tipo de pista
-
-Quantidade de acidentes fatais acumulada em 2025:
-
-- **Pista simples:** 3.424;
-- **Pista dupla:** 1.501;
-- **Pista múltipla:** 285.
-
-Pistas simples concentram a maior quantidade absoluta de acidentes fatais na base.
-
 ---
 
 ## 🧠 Cuidados de interpretação
@@ -334,10 +242,9 @@ Este projeto trabalha principalmente com **análise exploratória e estatística
 Portanto:
 
 - correlação não significa causalidade;
-- maior volume não significa necessariamente maior risco proporcional;
 - um gráfico de dispersão mostra associação, não explicação causal;
-- o radar usa valores normalizados e não deve ser lido como escala absoluta;
-- categorias com poucas ocorrências podem apresentar percentuais elevados;
+- a linha de tendência resume um padrão médio e não representa todos os acidentes;
+- a sobreposição de pontos pode ocultar a quantidade real de ocorrências;
 - a base deve ser interpretada dentro do contexto dos registros disponíveis da PRF em 2025.
 
 ---
@@ -374,9 +281,9 @@ Essa extensão é especialmente útil para portfólio e continuidade dos estudos
 
 ## ✅ Conclusão
 
-A análise em Pandas confirma os principais indicadores obtidos no trabalho em planilha e amplia a exploração dos dados com diferentes técnicas de visualização.
+A análise em Pandas confirma os principais indicadores obtidos no trabalho em planilha e explora os dados com cinco técnicas de visualização.
 
-O conjunto de gráficos permite observar o problema por diferentes perspectivas: **distribuição, relação entre variáveis, tempo, localização, fatalidade, concentração e perfil comparativo**.
+O conjunto de gráficos permite observar a **distribuição de mortes e pessoas**, a **relação entre veículos e pessoas** e as diferenças visuais entre acidentes **fatais e não fatais**.
 
 Além dos resultados sobre acidentes rodoviários, o projeto demonstra uma evolução importante no processo de Data Analytics: sair da exploração manual em planilhas e reproduzir a mesma lógica de análise em código de forma documentada, reutilizável e organizada.
 
