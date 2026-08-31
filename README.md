@@ -31,6 +31,7 @@ Além do aprendizado acadêmico, o repositório tem como objetivo demonstrar a e
 | [**03**](atividade_unidade_3_prf/README.md) | Limpeza, padronização e preparação das bases analítica e modelável. | Python · Pandas · Jupyter |
 | [**04**](atividade_unidade_4_prf/README.md) | Análise de indicadores, gravidade, letalidade e cruzamentos entre variáveis. | Excel |
 | [**05**](atividade_unidade_5_prf/README.md) | Análise exploratória e visualização dos dados como extensão complementar em Python. | Python · Pandas · NumPy · Matplotlib |
+| [**05.2**](atividade_unidade_5_2_prf/README.md) | Frequências e rankings de acidentes por UF, tipo de acidente e fase do dia. | Python · Pandas · Jupyter |
 
 ## 🔄 Fluxo do projeto
 
