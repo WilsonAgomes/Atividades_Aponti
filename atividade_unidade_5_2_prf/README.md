@@ -31,6 +31,9 @@ df["acidente_fatal"] = (df["mortos"] > 0).astype(int)
 | Total de acidentes | **72.529** |
 | Acidentes fatais | **5.210** |
 | Total de mortos | **6.043** |
+| Total de feridos leves + graves | **83.550** |
+| Total de vítimas | **89.593** |
+| Taxa de letalidade operacional | **6,74%** |
 | Percentual global de acidentes fatais | **7,18%** |
 
 > [!NOTE]
@@ -124,3 +127,13 @@ O pleno dia concentra o maior volume, com 40.375 acidentes, mas apresenta a meno
 Os resultados reforçam uma ideia central: **volume e proporção de fatalidade contam histórias diferentes**. Uma categoria pode concentrar muitas ocorrências sem apresentar o maior percentual fatal, enquanto outra pode ter menor volume e maior gravidade relativa.
 
 > 🚦 **Analisar os dois indicadores em conjunto produz uma leitura mais responsável e útil dos acidentes registrados pela PRF.**
+
+## Cálculo do total de vítimas
+
+`total_vitimas = mortos + feridos_leves + feridos_graves`. O total de um recorte é a soma dessa coluna nos acidentes selecionados. Não inclui ilesos ou ignorados e não soma novamente a coluna `feridos`, que já agrega leves e graves.
+
+Na base de 2025: **6.043 mortos + 83.550 feridos = 89.593 vítimas**. A letalidade operacional é `mortos / total_vitimas × 100` (6,74%); quando não há vítimas, a taxa é indefinida. Esse indicador difere do percentual de acidentes fatais.
+
+## Total de vítimas nos recortes
+
+O notebook calcula o indicador antes dos rankings e o apresenta na tabela global, nas estatísticas descritivas, nos rankings por categoria, nas séries por mês, dia da semana e hora e nas análises bivariadas. Os três relatórios `.txt` também apresentam tabelas de vítimas por UF, tipo de acidente e fase do dia, com a definição do denominador de cada taxa.

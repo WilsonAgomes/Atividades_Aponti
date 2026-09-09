@@ -63,6 +63,14 @@ df.head()
 # 
 # Também serão criadas colunas auxiliares de data, mês e hora para os gráficos temporais.
 
+# Vítimas = mortos + feridos leves + feridos graves (exclui ilesos e ignorados).
+# Contagens ausentes recebem zero, conforme a hipótese operacional do projeto.
+for coluna in ["mortos", "feridos_leves", "feridos_graves"]:
+    df[coluna] = pd.to_numeric(df[coluna], errors="raise").fillna(0)
+    if (df[coluna] < 0).any() or (df[coluna] % 1 != 0).any():
+        raise ValueError(f"Contagem de vítimas inválida: {coluna}")
+df["total_vitimas"] = df["mortos"] + df["feridos_leves"] + df["feridos_graves"]
+
 # Mantém a lógica do código original: 1 = acidente fatal; 0 = não fatal
 df["acidente_fatal"] = (df["mortos"] > 0).astype(int)
 
@@ -107,10 +115,10 @@ print("Total de acidentes fatais:", fatal.shape[0])
 kpi_total_acidentes = df["id"].count()
 kpi_total_mortos = df["mortos"].sum()
 kpi_total_feridos = df["feridos_leves"].sum() + df["feridos_graves"].sum()
-kpi_total_vitimas = df["Total_de_vitimas"].sum()
+kpi_total_vitimas = df["total_vitimas"].sum()
 kpi_acidentes_fatais = df["acidente_fatal"].sum()
 kpi_percentual_fatais = kpi_acidentes_fatais / kpi_total_acidentes * 100
-kpi_letalidade = kpi_total_mortos / kpi_total_vitimas * 100
+kpi_letalidade = kpi_total_mortos / kpi_total_vitimas * 100 if kpi_total_vitimas else np.nan
 
 print(f"Total de acidentes: {kpi_total_acidentes:,}".replace(",", "."))
 print(f"Total de mortos: {kpi_total_mortos:,}".replace(",", "."))
@@ -275,6 +283,7 @@ print("📌 Leitura: os dois grupos se sobrepõem em grande parte. Portanto, ve�
 
 # Agregação mensal
 m = df.groupby("mes").agg(
+    total_vitimas=("total_vitimas", "sum"),
     acidentes=("id", "count"),
     fatais=("acidente_fatal", "sum")
 )
@@ -604,6 +613,7 @@ display(totais_pista.to_frame("acidentes_fatais"))
 
 # Agregação por UF
 agg = df.groupby("uf").agg(
+    Total_vitimas=("total_vitimas", "sum"),
     Acidentes=("id", "count"),
     Fatais=("acidente_fatal", "sum"),
     Pessoas=("pessoas", "sum"),

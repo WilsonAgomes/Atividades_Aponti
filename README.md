@@ -49,7 +49,7 @@ Foram analisados **72.529 registros de acidentes**, buscando compreender os fato
 
 Entre as análises realizadas estão:
 
-- indicadores globais de acidentes, mortos, feridos e fatalidade;
+- indicadores globais de acidentes, mortos, feridos, total de vítimas e fatalidade;
 - rankings por Unidade da Federação;
 - rankings por rodovia federal;
 - comparação entre macrorregiões;
@@ -86,3 +86,19 @@ Frequências e rankings
 Análise de acidentes fatais
     ↓
 Cruzamentos, correlações e interpretação dos resultados
+
+```
+
+## Cálculo do total de vítimas
+
+`total_vitimas = mortos + feridos_leves + feridos_graves`. O total de um recorte é a soma dessa coluna nos acidentes selecionados. Não inclui ilesos ou ignorados e não soma novamente a coluna `feridos`, que já agrega leves e graves.
+
+Na base de 2025: **6.043 mortos + 83.550 feridos = 89.593 vítimas**. A letalidade operacional é `mortos / total_vitimas × 100` (6,74%); quando não há vítimas, a taxa é indefinida. Esse indicador difere do percentual de acidentes fatais.
+
+## Validação automatizada
+
+Execute `python -B -m unittest discover -s tests -v` na raiz. Os testes conferem a definição da atividade 5.3, a base analítica por ocorrência, a exclusão do indicador da modelagem, as exportações SQL e a execução dos notebooks.
+
+## Indicador padronizado nas atividades
+
+O critério da unidade 5.3 é adotado no SQL, nas bases tratadas, nos notebooks, nos relatórios de frequência e nas três planilhas. A soma utiliza **63.532 feridos leves + 20.018 feridos graves + 6.043 mortos**. As contagens são de vítimas registradas nas ocorrências, não uma contagem deduplicada de pessoas ao longo do ano.

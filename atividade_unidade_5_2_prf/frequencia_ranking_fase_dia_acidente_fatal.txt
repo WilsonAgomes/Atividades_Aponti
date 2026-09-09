@@ -15,6 +15,22 @@ A plena noite aparece logo em seguida, com 10,18%, além de apresentar 24.781 ac
 O pleno dia apresentou a maior quantidade total de acidentes, com 40.375 registros, porém teve o menor percentual de acidentes fatais, com 5,07%.
 
 
+2.1 TOTAL DE VÍTIMAS POR CATEGORIA
+
+O critério é o mesmo da atividade 5.3: mortos + feridos leves + feridos graves. Ilesos e ignorados não entram no total; a coluna feridos não é somada novamente. A letalidade abaixo usa mortos/vítimas, enquanto o percentual de acidentes fatais das demais seções usa ocorrências fatais/acidentes.
+
+Fase do dia | Acidentes | Mortos | Vítimas | Letalidade
+----------- | --------- | ------ | ------- | ----------
+Pleno dia   | 40.375    | 2.391  | 50.443  | 4,74%
+Plena Noite | 24.781    | 2.892  | 30.071  | 9,62%
+Anoitecer   | 3.926     | 288    | 4.846   | 5,94%
+Amanhecer   | 3.447     | 472    | 4.233   | 11,15%
+
+Total nacional: 72.529 acidentes, 6.043 mortos e 89.593 vítimas.
+Composição: 63.532 feridos leves + 20.018 feridos graves + 6.043 mortos.
+Letalidade operacional nacional: 6,74%. Os grupos acima cobrem toda a base.
+
+
 3. ANÁLISE DOS DADOS
 
 Os dados mostram que o maior volume de acidentes ocorre durante o pleno dia, com 40.375 registros. Mesmo assim, esse período apresenta o menor percentual de acidentes fatais da análise, com 5,07%.

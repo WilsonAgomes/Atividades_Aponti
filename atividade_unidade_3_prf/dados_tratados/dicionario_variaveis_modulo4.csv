@@ -1,4 +1,16 @@
 ﻿variavel;descricao;uso
+ano;Ano extraído da data da ocorrência;analise/modelagem
+mes;Mês numérico da ocorrência;analise/modelagem
+trimestre;Trimestre da ocorrência;analise/modelagem
+fim_de_semana;"1 para sábado/domingo; 0 nos demais dias";analise/modelagem
+turno;Madrugada, manhã, tarde, noite ou ignorado;analise/modelagem
+faixa_horaria;Faixa de três horas;analise/modelagem
+acidente_fatal;"1 se mortos >= 1; caso contrário 0";alvo
+total_vitimas;Mortos + feridos leves + feridos graves;analise/dashboard
+acidente_grave;1 se houve morto ou ferido grave;analise/dashboard
+indice_gravidade;mortos*3 + feridos_graves*2 + feridos_leves;analise/dashboard
+br_formatada;BR no formato BR-000;analise/modelagem
+chave_localidade;UF + município + BR formatada;analise/dashboard
 mortos;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
 feridos;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM
 feridos_leves;"Variável de resultado ou derivada do desfecho; causa data leakage";PROIBIDA NA MODELAGEM

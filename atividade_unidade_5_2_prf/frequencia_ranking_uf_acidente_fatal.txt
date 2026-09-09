@@ -25,6 +25,45 @@ Entre os menores percentuais aparecem:
 5º Amapá (AP) — 5,33%
 
 
+2.1 TOTAL DE VÍTIMAS POR CATEGORIA
+
+O critério é o mesmo da atividade 5.3: mortos + feridos leves + feridos graves. Ilesos e ignorados não entram no total; a coluna feridos não é somada novamente. A letalidade abaixo usa mortos/vítimas, enquanto o percentual de acidentes fatais das demais seções usa ocorrências fatais/acidentes.
+
+UF | Acidentes | Mortos | Vítimas | Letalidade
+-- | --------- | ------ | ------- | ----------
+MG | 9.570     | 765    | 12.767  | 5,99%
+SC | 8.186     | 434    | 9.834   | 4,41%
+PR | 7.630     | 593    | 9.130   | 6,50%
+RJ | 6.428     | 330    | 7.989   | 4,13%
+RS | 4.899     | 327    | 5.880   | 5,56%
+BA | 4.108     | 583    | 5.606   | 10,40%
+SP | 4.683     | 221    | 5.209   | 4,24%
+GO | 3.196     | 308    | 3.865   | 7,97%
+PE | 3.013     | 336    | 3.684   | 9,12%
+ES | 2.642     | 161    | 3.455   | 4,66%
+MT | 2.636     | 243    | 3.078   | 7,89%
+PB | 1.978     | 142    | 2.426   | 5,85%
+RN | 1.648     | 111    | 2.013   | 5,51%
+MS | 1.654     | 150    | 1.905   | 7,87%
+PI | 1.490     | 168    | 1.857   | 9,05%
+RO | 1.452     | 102    | 1.749   | 5,83%
+CE | 1.302     | 171    | 1.600   | 10,69%
+MA | 1.262     | 281    | 1.576   | 17,83%
+PA | 1.117     | 224    | 1.415   | 15,83%
+DF | 1.011     | 47     | 1.128   | 4,17%
+TO | 677       | 102    | 886     | 11,51%
+AL | 629       | 96     | 836     | 11,48%
+SE | 589       | 51     | 678     | 7,52%
+AC | 280       | 29     | 357     | 8,12%
+AP | 169       | 14     | 274     | 5,11%
+RR | 142       | 28     | 221     | 12,67%
+AM | 138       | 26     | 175     | 14,86%
+
+Total nacional: 72.529 acidentes, 6.043 mortos e 89.593 vítimas.
+Composição: 63.532 feridos leves + 20.018 feridos graves + 6.043 mortos.
+Letalidade operacional nacional: 6,74%. Os grupos acima cobrem toda a base.
+
+
 3. ANÁLISE DOS DADOS
 
 Os dados mostram diferenças descritivas entre os estados brasileiros. O Maranhão apresenta o maior percentual de acidentes fatais, com 18,70%, seguido pelo Pará com 17,28% e Roraima com 16,20%.

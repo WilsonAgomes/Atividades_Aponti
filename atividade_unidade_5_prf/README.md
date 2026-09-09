@@ -57,7 +57,8 @@ Principais variáveis utilizadas:
 | `feridos_leves` | Feridos leves |
 | `feridos_graves` | Feridos graves |
 | `veiculos` | Veículos envolvidos |
-| `Total_de_vitimas` | Coluna auxiliar construída no projeto |
+| `Total_de_vitimas` | Coluna auxiliar do Excel: mortos + feridos leves + feridos graves |
+| `total_vitimas` | Coluna recalculada no Python com a mesma definição da atividade 5.3 |
 | `Acidentes_Fatais` | Coluna auxiliar: 1 quando há pelo menos um morto |
 
 ---
@@ -88,6 +89,13 @@ df["acidente_fatal"] = (df["mortos"] > 0).astype(int)
 
 ```text
 Acidentes fatais / Total de acidentes × 100
+```
+
+**Total de vítimas por ocorrência**
+
+```python
+df["total_vitimas"] = df["mortos"] + df["feridos_leves"] + df["feridos_graves"]
+total_vitimas = df["total_vitimas"].sum()
 ```
 
 **Taxa de letalidade operacional**
@@ -299,3 +307,13 @@ Registros de ocorrências da Polícia Rodoviária Federal — 2025
 ```
 
 Para uso público ou publicação externa, consulte também os termos e a documentação oficial da fonte de dados da PRF.
+
+## Cálculo do total de vítimas
+
+`total_vitimas = mortos + feridos_leves + feridos_graves`. O total de um recorte é a soma dessa coluna nos acidentes selecionados. Não inclui ilesos ou ignorados e não soma novamente a coluna `feridos`, que já agrega leves e graves.
+
+Na base de 2025: **6.043 mortos + 83.550 feridos = 89.593 vítimas**. A letalidade operacional é `mortos / total_vitimas × 100` (6,74%); quando não há vítimas, a taxa é indefinida. Esse indicador difere do percentual de acidentes fatais.
+
+## Escopo do notebook e do script
+
+O notebook reúne os cinco primeiros gráficos. O script `src/analise_graficos_prf_2025.py` mantém a extensão com 16 gráficos, incluindo séries temporais, correlação e radar. Ambos recalculam `total_vitimas` a partir das três contagens, sem depender do valor armazenado na coluna auxiliar do Excel. Na planilha de entrada, o total também aparece em `KPIs!B5`.

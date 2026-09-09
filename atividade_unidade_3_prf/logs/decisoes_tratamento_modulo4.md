@@ -2,7 +2,7 @@
 
 ## Data e hora da geração
 
-2026-08-09 18:40
+2026-09-08 22:45
 
 ## Regras adotadas
 
@@ -14,6 +14,8 @@
 - Categorias relevantes ausentes preenchidas com `IGNORADO`.
 - Nulos nas contagens de vítimas preenchidos com zero, conforme hipótese operacional do roteiro.
 - Na base modelável, categóricas ausentes recebem `IGNORADO` e numéricas ausentes recebem `-1`.
+- `total_vitimas = mortos + feridos_leves + feridos_graves`, conforme a atividade 5.3; ilesos e ignorados ficam fora do total.
+- O total de vítimas é somado na base analítica e no resumo final e excluído da base modelável por revelar o desfecho.
 - O alvo foi preservado: `acidente_fatal = 1` quando `mortos >= 1`; caso contrário, `0`.
 - Foram removidas 0 duplicidades exatas.
 

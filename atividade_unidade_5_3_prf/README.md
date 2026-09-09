@@ -13,7 +13,7 @@ Descrever os padrões associados à ocorrência de **acidentes fatais** nas rodo
 A variável-alvo utilizada em toda a análise é:
 
 ```python
-acidente_fatal = 1 se mortos >= 1, caso contrário 0
+df["acidente_fatal"] = (df["mortos"] >= 1).astype(int)
 ```
 
 ## 🗃️ Fonte dos dados
@@ -75,3 +75,13 @@ O documento segue fielmente o modelo fornecido, com 8 seções:
 2. Cálculo dos indicadores globais, rankings, séries temporais, cruzamentos bivariados, combinações de fatores e matriz de correlação de Pearson — reproduzindo exatamente as métricas e os limiares de volume mínimo definidos no modelo do professor.
 3. Geração dos 8 gráficos (Matplotlib) equivalentes aos do modelo.
 4. Montagem do documento Word final, replicando a estrutura, os títulos, as tabelas e os quadros de destaque do modelo original.
+
+## Cálculo do total de vítimas
+
+`total_vitimas = mortos + feridos_leves + feridos_graves`. O total de um recorte é a soma dessa coluna nos acidentes selecionados. Não inclui ilesos ou ignorados e não soma novamente a coluna `feridos`, que já agrega leves e graves.
+
+Na base de 2025: **6.043 mortos + 83.550 feridos = 89.593 vítimas**. A letalidade operacional é `mortos / total_vitimas × 100` (6,74%); quando não há vítimas, a taxa é indefinida. Esse indicador difere do percentual de acidentes fatais.
+
+## Atualização do relatório
+
+O relatório Word apresenta o total de vítimas no sumário executivo, na tabela global e nas tabelas numéricas de rankings, dias da semana, análises bivariadas e cruzamentos. A fórmula distingue vítimas de pessoas envolvidas e de acidentes fatais; os totais de cada recorte foram recalculados sobre a base de 72.529 ocorrências.

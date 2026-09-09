@@ -1,31 +1,31 @@
-"causa_acidente","total_acidentes","acidentes_fatais","total_mortos","perc_fatais"
-"Suic�dio (presumido)","190","106","111","55"
-"Pedestre andava na pista","606","250","252","41"
-"Entrada inopinada do pedestre","667","203","209","30"
-"Transitar na contram�o","2475","736","961","29"
-"Participar de racha","22","6","7","27"
-"Pedestre cruzava a pista fora da faixa","525","130","133","24"
-"Pedestre - Ingest�o de �lcool/ subst�ncias psicoativas","150","27","28","18"
-"Modifica��o proibida","11","2","2","18"
-"Falta de acostamento","60","11","11","18"
-"Ultrapassagem Indevida","1770","302","404","17"
-"Transtornos Mentais (exceto suicidio)","59","10","10","16"
-"Restri��o de visibilidade em curvas verticais","13","2","2","15"
-"�rea urbana sem a presen�a de local apropriado para a travessia de pedestres","81","12","12","14"
-"Ilumina��o deficiente","157","23","24","14"
-"Defici�ncia do Sistema de Ilumina��o/Sinaliza��o","165","24","24","14"
-"Transitar no Acostamento","498","65","71","13"
-"Mal s�bito do condutor","546","73","87","13"
-"Sem�foro com defeito","8","1","1","12"
-"Velocidade Incompat�vel","4088","385","470","9"
-"Sinaliza��o mal posicionada","61","5","6","8"
-"Curva acentuada","203","17","19","8"
-"Problema com o freio","247","19","21","7"
-"Demais falhas na via","275","19","23","6"
-"Deixar de acionar o farol da motocicleta (ou similar)","15","1","1","6"
-"Condutor Dormindo","2116","135","171","6"
-"Aus�ncia de rea��o do condutor","11469","779","855","6"
-"Pista esburacada","232","12","17","5"
-"Falta de elemento de conten��o que evite a sa�da do leito carro��vel","59","3","4","5"
-"Estacionar ou parar em local proibido","182","10","11","5"
-"Condutor usando celular","189","10","12","5"
+﻿causa_acidente,total_vitimas,total_acidentes,acidentes_fatais,total_mortos,perc_fatais
+Suicídio (presumido),209,190,106,111,55.79
+Pedestre andava na pista,717,606,250,252,41.25
+Entrada inopinada do pedestre,791,667,203,209,30.43
+Transitar na contramão,4413,2475,736,961,29.74
+Participar de racha,36,22,6,7,27.27
+Pedestre cruzava a pista fora da faixa,667,525,130,133,24.76
+Falta de acostamento,69,60,11,11,18.33
+Modificação proibida,14,11,2,2,18.18
+Pedestre - Ingestão de álcool/ substâncias psicoativas,191,150,27,28,18.0
+Ultrapassagem Indevida,3164,1770,302,404,17.06
+Transtornos Mentais (exceto suicidio),61,59,10,10,16.95
+Restrição de visibilidade em curvas verticais,14,13,2,2,15.38
+Área urbana sem a presença de local apropriado para a travessia de pedestres,101,81,12,12,14.81
+Iluminação deficiente,213,157,23,24,14.65
+Deficiência do Sistema de Iluminação/Sinalização,225,165,24,24,14.55
+Mal súbito do condutor,738,546,73,87,13.37
+Transitar no Acostamento,602,498,65,71,13.05
+Semáforo com defeito,7,8,1,1,12.5
+Velocidade Incompatível,5603,4088,385,470,9.42
+Curva acentuada,281,203,17,19,8.37
+Sinalização mal posicionada,71,61,5,6,8.2
+Problema com o freio,253,247,19,21,7.69
+Demais falhas na via,352,275,19,23,6.91
+Ausência de reação do condutor,13360,11469,779,855,6.79
+Deixar de acionar o farol da motocicleta (ou similar),22,15,1,1,6.67
+Condutor Dormindo,2952,2116,135,171,6.38
+Afundamento ou ondulação no pavimento,255,206,12,14,5.83
+Acessar a via sem observar a presença dos outros veículos,9157,7097,394,421,5.55
+Animais na Pista,1561,1305,72,78,5.52
+Estacionar ou parar em local proibido,201,182,10,11,5.49

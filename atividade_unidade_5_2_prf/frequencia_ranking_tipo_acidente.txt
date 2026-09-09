@@ -27,6 +27,35 @@ Maiores percentuais de fatalidade:
 5º Atropelamento de Animal — 6,00%
 
 
+2.1 TOTAL DE VÍTIMAS POR CATEGORIA
+
+O critério é o mesmo da atividade 5.3: mortos + feridos leves + feridos graves. Ilesos e ignorados não entram no total; a coluna feridos não é somada novamente. A letalidade abaixo usa mortos/vítimas, enquanto o percentual de acidentes fatais das demais seções usa ocorrências fatais/acidentes.
+
+Tipo de acidente               | Acidentes | Mortos | Vítimas | Letalidade
+------------------------------ | --------- | ------ | ------- | ----------
+Colisão traseira               | 14.360    | 683    | 17.059  | 4,00%
+Colisão transversal            | 9.306     | 481    | 12.496  | 3,85%
+Saída de leito carroçável      | 10.209    | 700    | 12.338  | 5,67%
+Colisão frontal                | 4.739     | 1.863  | 9.459   | 19,70%
+Colisão lateral mesmo sentido  | 7.885     | 228    | 9.067   | 2,51%
+Tombamento                     | 6.351     | 293    | 7.534   | 3,89%
+Colisão com objeto             | 5.109     | 323    | 5.275   | 6,12%
+Queda de ocupante de veículo   | 3.450     | 89     | 4.127   | 2,16%
+Atropelamento de Pedestre      | 3.057     | 919    | 3.765   | 24,41%
+Colisão lateral sentido oposto | 2.152     | 255    | 3.079   | 8,28%
+Capotamento                    | 1.373     | 74     | 1.901   | 3,89%
+Engavetamento                  | 1.233     | 34     | 1.702   | 2,00%
+Atropelamento de Animal        | 1.133     | 74     | 1.341   | 5,52%
+Eventos atípicos               | 287       | 24     | 317     | 7,57%
+Derramamento de carga          | 107       | 3      | 72      | 4,17%
+Incêndio                       | 1.771     | 0      | 55      | 0,00%
+Sinistro pessoal de trânsito   | 7         | 0      | 6       | 0,00%
+
+Total nacional: 72.529 acidentes, 6.043 mortos e 89.593 vítimas.
+Composição: 63.532 feridos leves + 20.018 feridos graves + 6.043 mortos.
+Letalidade operacional nacional: 6,74%. Os grupos acima cobrem toda a base.
+
+
 3. ANÁLISE DOS DADOS
 
 Os dados mostram que a colisão traseira é o tipo de acidente mais frequente, com 14.360 registros, representando aproximadamente 20% do total analisado. Apesar do grande volume, seu percentual de fatalidade é de 4,31%.
